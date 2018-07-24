@@ -1,0 +1,710 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/* html::-webkit-scrollbar { 
+    display: none; 
+}   */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+	height: 1200px;
+    background: url("img/ring.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+/* Nav menu
+------------------------------------------------------------------------------*/
+.top-menu  {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    position: fixed;
+    background: rgba(82, 189, 176, 0.671);
+    z-index: 3;
+}
+
+.menu-btn {
+    color: rgb(248, 252, 251);
+    text-transform: uppercase;
+    font-size: 15px;
+    background: rgb(49, 49, 49);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 71%;
+    right: 0;
+    padding: 20px 10px;
+    transition: all .2s;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.label-header {
+    width: 100%;
+    font-family: 'Emilys Candy', cursive;
+    font-size: 100px;
+    color: rgb(49, 49, 49);
+    min-width: 130px;  
+    margin: 100px 0 0 10%; 
+    white-space: nowrap;
+}
+
+.top-menu > ul {
+    display: flex;
+    margin-top: 90px;
+    margin-right: 2%;
+}
+
+.top-menu > ul li a {
+    display: block;
+    font-size: 18px;
+    color: rgb(49, 49, 49);
+    padding: 40px 30px 0 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+    transition: transform .8s;
+}
+
+.top-menu li a:hover {
+    color: rgb(129, 11, 11);
+    text-shadow: rgb(245, 192, 192) 1px 1px 10px;
+    transform: scale(1.2);
+}
+
+.top-menu li ul{
+    position: absolute;
+    min-width: 150px;
+    margin-right: -40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 1s;
+}
+
+.top-menu li > ul li ul {
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+
+.top-menu li:hover > ul{
+    position: relative;
+    min-width: 150px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* End nav
+-----------------------------------------------------------------------------*/
+
+.discription {
+    display: flex;
+    
+}
+
+.ornament-angle {
+    width: 300px;
+    height: 300px;
+    margin: 435px 0 0 65% ;
+    position: absolute;
+}
+
+.capital_letter {
+    font-size: 30px;
+    font-family: 'Lobster',cursive;
+    color: rgb(60, 139, 130);
+}
+
+.discription-text {
+    display: block;
+    width: 300px;
+    height: auto;
+    text-shadow: rgb(28, 41, 16) 1px 1px 25px;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(38, 38, 38);
+    margin: 550px 0 0 60%;
+    position: relative;
+}
+
+.citation {
+    height: 200px;
+    background: rgba(82, 189, 176, 0.671);
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    line-height: 4ex;
+    color: rgb(54, 52, 52);
+    padding: 130px 20px 0 20px;
+    margin-top: 200px
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+.gem {
+    display: block;
+    width: 300px;
+    left: 42%;
+    margin-top: -55px;
+    position: absolute;
+    z-index: 2;
+}
+
+#section1 {
+    height: 1000px;
+    background: rgb(232, 241, 248) url("img/bg_vika.png") no-repeat fixed center;
+    background-size: cover ;
+    position: relative;
+    z-index: 1;
+}
+
+.about-me {
+    width: 600px;
+    padding: 70px 70px ;
+    margin-top: 450px;
+    margin-left: 5%;
+    background: rgba(0, 0, 0, 0.555);
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    transition: all .7s;
+}
+
+.about-me:hover {
+    transform: scale(1.1);
+    
+}
+.about-me-text {
+    color: rgb(23, 103, 189);
+    font-size: 20px;
+    line-height: 25px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.section-heading {
+    text-align: center;
+    padding-top: 190px;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: rgb(88, 88, 88);
+}
+
+
+#section2 {
+    height: 3750px;
+    background: rgb(251, 252, 247) url('img/glass_bead.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+.other-info {
+    padding: 150px 0;
+    font-size: 18px;
+    line-height: 2ex;
+}
+
+.vika-say {
+    display: flex;
+    position: relative;
+    top: -700px;
+}
+
+.vika-say-img{
+    height: 100%;
+    width: 700px;
+    border-radius: 0 0 90px 0;
+}
+
+.speech-bubble {
+    margin-top: -150px;
+    margin-left: -150px;
+}
+
+.speech-bubble img {
+    height: 300px;
+    width: 400px;
+}
+
+.speech-bubble p {
+    width: 400px;
+    position: relative;
+    top: -220px;
+    left: 10px;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    line-height: 4ex;
+    color: rgb(54, 52, 52);
+}
+
+.brooches {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 300px;
+    height: 200px;
+    padding: 80px 30px 0 30px;
+    display: flex;
+    box-shadow: 2px 2px 5px #060707;
+}
+
+.brooches p {
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    line-height: 6ex;
+    color: rgb(241, 243, 219);
+}
+
+.brooches span {
+    font-size: 90px;
+    color: rgb(1, 35, 185);
+}
+
+.brooches img {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 500px;
+    height: 400px;
+    border-radius: 90px;
+    transition: all ease-out .3s;
+    box-shadow: 1px 1px  5px black;
+}
+
+.earrings {
+    background: rgba(25, 47, 150, 0.5);
+    position: relative;
+    top: 600px;
+    height: 200px;
+    padding: 80px 30px 0 30px;
+    display: flex;
+    box-shadow: 2px 2px 5px #012644;
+}
+
+.earrings p {
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    line-height: 6ex;
+    color: rgb(249, 225, 252);
+}
+
+.earrings span {
+    font-size: 90px;
+    color: rgb(248, 211, 243);
+}
+
+.earrings img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 500px;
+    height: 400px;
+    border-radius: 90px;
+    transition: all ease-out 1s;
+    box-shadow: 1px 1px  5px black;
+}
+
+.other {
+    background: rgba(253, 198, 244, 0.56);
+    position: relative;
+    top: 950px;
+    height: 200px;
+    padding: 80px 30px 0 30px;
+    display: flex;
+    box-shadow: 2px 2px 2px 2px #dbdddd;
+}
+
+.other p {
+    width: 300px;
+    position: absolute;
+    text-align: right;
+    font-family: 'Marck Script', cursive;
+    font-size: 90px;
+    line-height: 5ex;
+    text-shadow: 1px 1px 5px black;
+}
+
+.other img {
+    margin-left: -60px;
+    width: 500px;
+    height: 400px;
+    border-radius: 90px;
+    box-shadow: 1px 1px  5px black;
+}
+
+.choker {
+    color: bisque;
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    transition: all ease-out .4s;
+}
+
+.bracelet {
+    color: rgb(131, 222, 228);
+    position: absolute;
+    top: 200px;
+    left: 41%;
+    transition: all ease-out .4s;
+}
+
+.diadem {
+    color: rgb(196, 157, 204);
+    position: absolute;
+    top: 200px;
+    right: 12%;
+    transition: all ease-out .4s;
+}
+
+.necklaces {
+    position: relative;
+    top: 1150px;
+    height: 700px;
+    width: 100%;
+}
+
+.necklaces p {
+    margin: 250x auto;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 50px;
+    color: rgb(110, 108, 108);
+}
+
+.of-course-word {
+    color: rgb(26, 63, 23);
+    opacity: 0;
+}
+
+.endless-variety-word {
+    color: #5a1e06;
+    opacity: 0;
+}
+
+.remaining-string {
+    opacity: 0;    
+}
+
+.necklace-word {
+    font-family: 'Marck Script', cursive;
+    font-size: 100px;
+    line-height: 5ex;
+    color: goldenrod;
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+}
+
+.necklaces img {
+    margin:0 0 30px 30px;
+    width: 500px;
+    height: 400px;
+    border-radius: 90px;
+    box-shadow: 1px 1px  5px black;
+    opacity: 0;
+}
+
+.necklaces div {
+    margin-left: 150px;
+    display: inline-block;
+}
+
+
+#section3 {
+    height: 2800px;
+    background: white url('img/bg_beads.jpg')  fixed;
+    background-size: cover;
+}
+
+.order-info-block {
+    height: 500px;
+    width: 1200px;
+    position: relative;
+    top: 100px;
+    left: 20%;
+    border-top: 2px solid rgb(160, 160, 160);
+    border-bottom: 2px solid rgb(160, 160, 160);
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f2f2+14,ffffff+91&0+6,0+6,0.56+12,1+30,1+78,0.58+89,0+98 */
+    background: -moz-linear-gradient(left, rgba(242,242,242,0) 6%, rgba(242,242,242,0.56) 12%, rgba(242,242,242,0.61) 14%, rgba(245,245,245,1) 30%, rgba(253,253,253,1) 78%, rgba(255,255,255,0.58) 89%, rgba(255,255,255,0.45) 91%, rgba(255,255,255,0) 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(242,242,242,0) 6%,rgba(242,242,242,0.56) 12%,rgba(242,242,242,0.61) 14%,rgba(245,245,245,1) 30%,rgba(253,253,253,1) 78%,rgba(255,255,255,0.58) 89%,rgba(255,255,255,0.45) 91%,rgba(255,255,255,0) 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(242,242,242,0) 6%,rgba(242,242,242,0.56) 12%,rgba(242,242,242,0.61) 14%,rgba(245,245,245,1) 30%,rgba(253,253,253,1) 78%,rgba(255,255,255,0.58) 89%,rgba(255,255,255,0.45) 91%,rgba(255,255,255,0) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */;
+}
+
+.order-info-block p {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 150px;
+    font-family:  'Lobster', cursive;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(65, 60, 60);
+}
+
+.order-info-block a, .order-info-block span {
+    color: rgb(30, 129, 175);
+}
+
+/* slider */
+.slider {
+    width: 100%;
+    height: 650px;
+    margin: 100px auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+7,000000+61,000000+69,000000+86,000000+86,000000+92,45484d+99,45484d+99 */
+    background: rgb(69,72,77); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 7%, rgba(0,0,0,1) 61%, rgba(0,0,0,1) 69%, rgba(0,0,0,1) 86%, rgba(0,0,0,1) 86%, rgba(0,0,0,1) 92%, rgba(69,72,77,1) 99%, rgba(69,72,77,1) 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 7%,rgba(0,0,0,1) 61%,rgba(0,0,0,1) 69%,rgba(0,0,0,1) 86%,rgba(0,0,0,1) 86%,rgba(0,0,0,1) 92%,rgba(69,72,77,1) 99%,rgba(69,72,77,1) 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 7%,rgba(0,0,0,1) 61%,rgba(0,0,0,1) 69%,rgba(0,0,0,1) 86%,rgba(0,0,0,1) 86%,rgba(0,0,0,1) 92%,rgba(69,72,77,1) 99%,rgba(69,72,77,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#45484d',GradientType=0 ); /* IE6-9 */
+}
+
+.slick-slide {
+    margin: 0px 5px;
+    outline: none;
+}
+
+.slide-img {
+    width: 100%;
+    height: 550px;
+    margin: 8% 0;
+}
+
+.slider-img-discription-box {
+    position: absolute;
+    margin-top: 47px;
+    padding: 5px 0 10px 10px;
+    background: rgba(230, 230, 230, 0.5);
+    width: 575px;
+    font-size: 13px;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    filter: brightness(0.4);
+}
+
+.slick-current {
+    filter: brightness(1);
+}
+/* End slider */
+
+
+/* Dev team spoiler */
+.spoiler-body {
+    background: rgba(0, 0, 0, 0.925);
+    overflow: hidden;
+    display: flex;
+    -webkit-transition: ease-in max-height .8s, padding .8s;
+    transition: ease-in max-height .8s, padding .8s;
+    max-height: 0;
+  }
+  
+.spoiler-heading {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 12px;
+    margin-top: -7px;
+    text-shadow: 1px 1px 3px rgb(17, 14, 7);
+    color: rgb(254, 193, 52);
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+.spoiler-heading:before, .spoiler-heading:after {
+    content: ' ￬ ';
+}
+
+.spoiler-heading:hover {
+    color: gold;
+    cursor: pointer;
+  }
+  
+  /* animate */
+.spoiler-heading:hover + .spoiler-body,
+.spoiler-body:hover {
+    max-height: 700px;
+    padding: 15px 0;
+    display: flex;
+  }
+
+.spoiler-item {
+    margin: 100px auto;
+}
+
+.spoiler-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.spoiler-item p, .spoiler-item a {
+    text-align: center;
+    line-height: 3ex;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.76);
+    color: rgb(228, 194, 0);
+    font-size: 20px;    
+    text-decoration: none;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+	margin: 0 auto;
+	height: 600px;
+	background: rgb(22, 22, 22);
+}
+
+.footer-all {
+    display: flex;
+}
+
+.footer-info {
+    margin: 70px 0 0 70px;
+    color: goldenrod;
+    font-size: 15px;
+}
+
+.footer-info-heading {
+    font: 20px Lobster;
+    color: goldenrod;
+}
+
+.form-group {
+    padding: 50px 0 0 70px;
+}
+
+.form-name, .form-email, .form-comment {
+    background:rgb(22, 22, 22);
+    border-right: 1px solid goldenrod;
+    border-bottom: 1px solid goldenrod;
+    border-top: none;
+    border-left: none;
+    color: goldenrod;
+    outline: none;
+}
+
+.form-name, .form-email {
+    width: 200px;
+    height: 20px;
+}
+
+.form-comment {
+    width: 400px;
+    resize: vertical;
+}
+
+.comment-btn {
+    display: flex;
+}
+
+.submit-btn {
+    margin-left: 50px;
+    margin-top: 157px;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: goldenrod;
+}
+
+.submit-btn:hover {
+    background: rgb(231, 216, 9);
+}
+
+.footer-nav-n-inco {
+    width: 100%;
+    display: flex;
+}
+
+.footer-ico  {
+    margin: 70px 0 0  40%;
+    line-height: 50px;
+    color: goldenrod;
+    white-space: nowrap;
+}
+
+#footer-nav {
+    margin-top: 70px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#footer-nav a, .footer-ico a{
+    color: goldenrod;
+    font-size: 13px;
+    transition: all ease .5s;
+}
+
+#footer-nav a:hover, .footer-ico a:hover{
+    text-shadow: 1px 1px 20px snow;
+}
+
+.label-footer {
+    width: 100%;
+    font-family: 'Emilys Candy', cursive;
+    font-size: 100px;
+    color: goldenrod;
+    min-width: 130px;  
+    white-space: nowrap;
+    display: flex;
+    margin-top: 110px;
+}
+
+
+/* 
+Arvhive-------------------------------------------------------------------------------------------- */
+
+.archive-wrapper {
+    height: 2000px;
+    width: 100%;
+}
+
+.archive-main {
+    width: 100%;
+}
+
+.decoration-image-box {
+    background:#f1f1f1; 
+    float:left; 
+    margin: 0 15px 15px 0; 
+    padding: 10px;
+    margin-top: 200px;
+    justify-content: space-between;
+}
+
+.decoration-image {
+    height: 250px;
+    width: 250px;
+    padding: 50px;
+    background: rgb(201, 201, 201);
+}

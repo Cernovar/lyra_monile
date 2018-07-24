@@ -1,0 +1,159 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatiile" content="ie=edge">
+        <link rel="shortcut icon" href="{% static 'landing/img/blue.ico' %}" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="{% static 'landing/slick/slick.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'landing/slick/slick-theme.css' %}"/>
+        <link rel="stylesheet" href="{% static 'landing/font-awesome/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'landing/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'landing/style.css' %}">
+        <link rel="stylesheet" href="{% static 'landing/media.css' %}">
+        <link href='https://fonts.googleapis.com/css?family=Aguafina Script|Lobster|Pattaya|Marck+Script' rel='stylesheet'> 
+        <link href="https://fonts.googleapis.com/css?family=Emilys+Candy" rel="stylesheet">
+    </head>
+<body>
+
+
+    <nav class="top-menu" id="menu">
+        <label class="label-header">Lyra monile</label>
+        
+                <input type="checkbox" id="menu-btn" >
+                <label for="menu-btn" class="menu-btn">Menu</label>
+            
+        <ul class="top-menu-list">
+
+            <li class="top-menu-item"><a href="#header" class="top-menu-link" title="Вверх на главную">Главная</a></li>
+            <li class="top-menu-item"><a href="#section1" class="top-menu-link" title="К разделу 'Обо мне'">Обо мне</a></li>
+            <li class="top-menu-item"><a href="#section3" class="top-menu-link">Фотографии</a>
+                
+                <ul class="sub-menu-list">
+                    <li class="game-item"><a class="game-link" href="#section2">Презентация</a></li>
+                    <li class="game-item"><a class="game-link" href="#section3">Новинки</a></li>
+                    
+                    <li class="game-item"><a class="game-link" href="{% url 'archive' %}" title="К галерее с фотографиями" target="_blank">Архив</a></li>
+                </ul>
+    
+            </li>
+            <li class="top-menu-item"><a href="#footer" class="top-menu-link" title="Оставить отзыв">Обратная связь</a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+
+        <div>
+            {% block content %}
+            
+            {% endblock content %}
+        </div>
+
+        <div class="dev-team-spoiler">
+                <p class="spoiler-heading">Команда разработчиков</p>
+                <div class="spoiler-body">
+                    <div class="spoiler-item">
+                        <img class="spoiler-img" src="{% static 'landing/img/disign.jpg' %}">
+                        <p class="dev-name">
+                            Дизайн <br><a href="https://vk.com/golovkoa" target="_blank"> Andrey Golovko </a>
+                        </p>
+                    </div>
+                    <div class="spoiler-item">
+                        <img class="spoiler-img" src="{% static 'landing/img/frontend.jpg' %}">
+                        <p class="dev-name">
+                            Фронтэнд <br> <a href="https://vk.com/golovkoa" target="_blank"> Andrew G. </a>
+                        </p>
+                    </div>
+                    <div class="spoiler-item">
+                        <img class="spoiler-img" src="{% static 'landing/img/backend.jpg' %}">
+                        <p class="dev-name">
+                            Бэкэнд <br> <a href="https://vk.com/golovkoa" target="_blank"> golovko_a </a>
+                        </p>
+                    </div>
+                    <div class="spoiler-item">
+                        <img class="spoiler-img" src="{% static 'landing/img/tester.jpg' %}">
+                        <p class="dev-name">
+                            Тестинг и отладка <br> <a href="https://vk.com/golovkoa" target="_blank"> golovko_tester </a>
+                        </p>
+                    </div>   
+                </div>
+            </div>
+            
+        </main>
+
+        <footer id="footer">
+
+            <div class="footer-all">
+                <div class="comments">
+
+                    <div class="footer-info">
+                        <strong class="footer-info-heading">Большое спасибо за то, что посетили мой сайт!<br> <br></strong>
+                        <p>Если хотите связаться со мной по поводу украшений или оставить отзыв</p>
+                        <p>воспользуйтесь формой ниже :)</p>
+                    </div>
+            
+                    <form action="" method="POST"> {% csrf_token %}
+                        <div class="form-group">
+                            {{ form.name }}
+                        </div>
+                        <div class="form-group">
+                            {{ form.email }}
+                        </div>
+                        <div class="comment-btn">
+                            <div class="form-group">
+                                {{ form.comment }}
+                            </div>
+                            <button class="submit-btn" type="submit">
+                                Отправить
+                            </button>
+                        </div> 
+                    </form>
+                </div>
+                
+                <div class="footer-nav-n-inco">
+                    <div class="footer-ico">  
+                        <p class="footer-info-heading">Также для связи со мной: </p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>  +7 950 109 98 74</p>
+                        <a href="https://www.instagram.com/lyra_monile" target="_blank"><p><i class="fa fa-instagram" aria-hidden="true"></i> instagram</p></a> 
+                        <a href="https://vk.com/sothell" target="_blank"><p><i class="fa fa-vk" aria-hidden="true"></i> vkontakte</p></a> 
+                        <a href="" target="_blank"><p><i class="fa fa-facebook-official" aria-hidden="true"></i> facebook</p></a> 
+                        <a href="" target="_blank"><p><i class="fa fa-telegram" aria-hidden="true"></i> telegram</p></a> 
+                        
+                    </div>
+                    <div id="footer-nav">
+                        <p class="footer-info-heading">
+                            Перейти: 
+                        </p>
+                        <a href="#header" class="footer-link">
+                            <p>Вверх</p>
+                        </a>
+                        <a href="#section1" class="footer-link">
+                            <p>Обо мне</p>
+                        </a>
+                        <a href="#section2" class="footer-link">
+                            <p>Презентация</p>
+                        </a>
+                        <a href="#section3" class="footer-link">
+                            <p>Новинки</p>
+                        </a>
+                        <a href="{% url 'archive' %}" target="_blank" class="footer-link">
+                            <p>Архив</p>
+                        </a>
+                        <label class="label-footer">Lyra monile</label>
+                        </div>
+                </div>
+                
+            </div>
+            
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="{% static 'landing/slick/slick.min.js' %}"></script>
+    <script language="JavaScript" src="{% static 'landing/js/script.js' %}" type="text/javascript"> </script>
+
+</body>
+</html>

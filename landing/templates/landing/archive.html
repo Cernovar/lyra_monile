@@ -1,0 +1,25 @@
+{% extends 'landing/base.html' %}
+
+
+{% block content %}
+    
+    <div class="archive-wrapper">
+        <div class="archive-main">
+            
+            {% for decoration_image in decorations_images %}
+                <div class="decoration-image-box">
+                    <img class="decoration-image" src="{{ decoration_image.img.url }}" alt="">
+                </div>
+            {% endfor %}
+
+            {% for custome_image in customes_images %}
+                <div class="decoration-image-box">
+                    <img class="decoration-image" src="{{ custome_image.img.url }}" alt="">
+                </div>
+            {% endfor %}
+                
+        </div>
+    </div>
+     
+{% endblock content %}
+    

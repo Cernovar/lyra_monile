@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+s_k.py
+db.sqlite3
+/static
+.vscode
